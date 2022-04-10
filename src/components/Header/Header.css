@@ -1,0 +1,19 @@
+.navigation{
+    height: 80px;
+    background-color: #1C2B35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.navigation a{
+    color: white;
+    margin-left: 36px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navigation a:hover{
+    color: orange;
+}

@@ -1,0 +1,51 @@
+.review-item{
+    border: 1px solid red;
+    border-radius: 8px;
+    margin: 5px 50px;
+    padding: 8px;
+    width: 571px;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+}
+.item-img{
+    background-color: antiquewhite;
+    width: 91px;
+    display: flex;
+    align-items: center;
+}
+.item-img img{
+    /* height: 100%; */
+    width: 100%;
+    border-radius: 10px;
+}
+.item-details{
+    background-color: aquamarine;
+    margin: 0 5px;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+.item-details p{
+    margin: 3px 0;
+}
+.item-details h3{
+    margin: 5px 0;
+}
+.item-delete{
+    background-color: aqua;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-delete button{
+    background: rgba(235, 87, 87, 0.3);
+    border: 0;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dlt-icon{
+    color: #EB5757;
+    font-size: 27px;
+}
