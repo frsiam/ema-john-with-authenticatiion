@@ -7,6 +7,7 @@ import Inventory from './components/Inventory/Inventory';
 import About from './components/About/About';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
+import RequiredAuth from './components/RequiredAuth/RequiredAuth';
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
         <Route path='/' element={<Shop></Shop>}></Route>
         <Route path='/shop' element={<Shop></Shop>}></Route>
         <Route path='/orders' element={<Orders></Orders>}></Route>
-        <Route path='/inventory' element={<Inventory></Inventory>}></Route>
+        <Route path='/inventory' element={
+          <RequiredAuth>
+            <Inventory></Inventory>
+          </RequiredAuth>
+        }></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
