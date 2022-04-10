@@ -10,15 +10,24 @@ const Login = () => {
                 <form>
                     <div className="input-group">
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="email" id="" />
+                        <input type="email" name="email" id="" required/>
                     </div>
                     <div className="input-group">
                         <label htmlFor="password">Password</label>
-                        <input type="password" name="password" id="" />
+                        <input type="password" name="password" id="" required/>
                     </div>
                     <button className='form-submit' type="submit">Login</button>
-                    <p className='form-text'>New to Ema-John? <Link className='form-link' to='/signup'>Create New Account</Link></p>
                 </form>
+                <p className='form-text'>New to Ema-John? <Link className='form-link' to='/signup'>Create New Account</Link></p>
+                <div className='form-line'>
+                    <div>
+                        <hr />
+                    </div>
+                    <p>or</p>
+                    <div>
+                        <hr />
+                    </div>
+                </div>
             </div>
         </div>
     );
