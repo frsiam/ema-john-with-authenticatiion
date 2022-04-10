@@ -16,9 +16,6 @@ const SignUp = () => {
     if(user){
         navigate('/')
     }
-    if(error){
-        setError(error.message)
-    }
     console.log(user)
     
 
